@@ -8,7 +8,7 @@
 ### ✔️DB
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=green">
 
-<br/><br/><table>
+<table>
   <tbody>
     <tr>
       <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b>FE 팀원 : </b></sub></a><br /></td>
@@ -18,7 +18,7 @@
       <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>FE 팀원 : </b></sub></a><br /></td>
     </tr>
   </tbody>
-</table><br/><br/><br/><br/>
+</table><br/><br/>
 
 ## Web Project 2)
 
