@@ -27,7 +27,12 @@
 
 ### ✔️About project
 #### 기존의 Spring Framework와 JavaScript 기반의 프로젝트를 Spring Boot와 React를 사용해 적용시켰습니다.
+#### 1) JPA를 통해 SQL문이 아닌 Method를 통한 객체지향적 코드 작성을 학습했습니다.
+#### 2) 데이터를 JSON 형태로 나타내고 처리하는 방식을 통해 RESTful API에 대한 이해도가 증가하였습니다.
+#### 3) React에서의 Component 생명 주기, Hook, 렌더링 원리에 친숙해진 계기가 되었습니다.
+#### 4) websocket을 활용한 채팅 기능을 추가하여 websocket의 실시간 양방향 통신을 이해할 수 있었습니다.
 
+<br/><br/><br/>
 ![main2](https://github.com/yunijcoding/webproject/assets/140949271/eb8c167c-fb76-404e-8427-9292e4990cbd)
 <br/><br/><br/><br/><br/><br/>
 ![facilities](https://github.com/yunijcoding/webproject/assets/140949271/b8dfbc89-3804-48a2-9902-9c70ce28e6a6)
@@ -39,6 +44,9 @@
 ![map](https://github.com/yunijcoding/webproject/assets/140949271/0f6536ef-616a-46de-8e4e-b1d86cf7ea17)
 <br/><br/><br/><br/><br/><br/>
 ![rideDetail](https://github.com/yunijcoding/webproject/assets/140949271/a13f6f81-c11d-49d2-9a77-cbefa57178bf)
+<br/><br/><br/><br/><br/><br/>
+![chat](https://github.com/yunijcoding/webproject/assets/140949271/4dd0736a-9560-4e9e-b1a1-2d0cfce18b2b)
+
 
 
 
