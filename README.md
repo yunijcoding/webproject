@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=green">
 
 ### ✔️About project
-#### 이번 프로젝트에서 저는 놀이공원와 놀이기구에 대한 상세 정보를 나타내는 역할을 맡았습니다. 
+#### 저는 프로젝트의 주제에 대한 상세 정보를 나타내는 역할을 맡았습니다. 
 #### 사용자에게 다양한 정보 제공과 편의를 중점에 두고 프로젝트를 진행했습니다.
 #### Ajax를 이용한 데이터의 비동기 처리 방식에 대한 활용과 MVC 모델 작동 원리 및 SQL 언어에 대해 더욱 더 이해하게 된 계기가 되었습니다.
 
