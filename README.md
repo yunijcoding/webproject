@@ -27,3 +27,18 @@
 
 ### ✔️About project
 #### 기존의 Spring Framework와 JavaScript 기반의 프로젝트를 Spring Boot와 React를 사용해 적용시켰습니다.
+
+![main2](https://github.com/yunijcoding/webproject/assets/140949271/eb8c167c-fb76-404e-8427-9292e4990cbd)
+<br/><br/><br/><br/><br/><br/>
+![facilities](https://github.com/yunijcoding/webproject/assets/140949271/b8dfbc89-3804-48a2-9902-9c70ce28e6a6)
+<br/><br/><br/><br/><br/><br/>
+![review](https://github.com/yunijcoding/webproject/assets/140949271/e7328e56-cb24-4d73-ab90-b7c7aa3c9b0c)
+<br/><br/><br/><br/><br/><br/>
+![amuseList](https://github.com/yunijcoding/webproject/assets/140949271/e01dc676-376d-4164-b224-7103ee817e7b)
+<br/><br/><br/><br/><br/><br/>
+![map](https://github.com/yunijcoding/webproject/assets/140949271/0f6536ef-616a-46de-8e4e-b1d86cf7ea17)
+<br/><br/><br/><br/><br/><br/>
+![rideDetail](https://github.com/yunijcoding/webproject/assets/140949271/a13f6f81-c11d-49d2-9a77-cbefa57178bf)
+
+
+
