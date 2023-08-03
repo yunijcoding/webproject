@@ -31,106 +31,12 @@
 <!-- 아이콘 cdn-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+<!-- css 파일 모듈화  -->
+<link rel="stylesheet" href="${path}/resources/amuse/css/amuseDetail.css">
 
-<style type="text/css">
-.a-images {
-	width: 150px;
-	height: 100px;
-}
-.main-img {
-	width: 900px;
-	height: 600px;
-}
-.card{margin-left: 5px;}
-
-.custom-card-img {
-	max-width: 100%;
-	height: 300px;
-	object-fit: cover;
-}
-.custom-card-body-height {height: 110px;}
-.custom-card-body-height2 {height: 230px;}
-
-.card-body-2{height: 100px;}
-.hidden-img{overflow: hidden;}
-
-.r-img{width: 100%;}
-.rImg{height: 150px;}
-
-.f-img{
-	width: 100px;
-	height: 100px;
-}
-.insert-btn{
-	float: right;
-}
-.starFrm fieldset{
-    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
-    direction: rtl;
-    border: 0; /* 필드셋 테두리 제거 */
-}
-.starFrm input[type=radio]{
-	display: none;
-}
-.starFrm label{
-    font-size: 2em; /* 이모지 크기 */
-    color: transparent; /* 기존 이모지 컬러 제거 */
-    text-shadow: 0 0 0 lightgray; /* 새 이모지 색상 부여 */
-}
-.starFrm label:hover{
-    text-shadow: 0 0 0 gold; /* 마우스 호버 */
-}
-.starFrm label:hover ~ label{
-    text-shadow: 0 0 0 gold; /* 마우스 호버 뒤에오는 이모지들 */
-}
-.starFrm input[type=radio]:checked ~ label{
-    text-shadow: 0 0 0 gold; /* 마우스 클릭 체크 */
-}
-
-.starFrmBack{
-    color: transparent; /* 기존 이모지 컬러 제거 */
-    text-shadow: 0 0 0 lightgray; /* 새 이모지 색상 부여 */
-}
-
-.back{
-	color: lightgray;
-}
-
-.ul-li > li > a {
-	text-decoration: none;
-	font-size: 1.2em;
-}
-.star-a {text-decoration: none;}
-
-.table{
-	width: 100%;
-	height: 30px;
-	text-align: center;
-}
-.pagination{display: inline-flex;}
-.pagination li > a {text-decoration: none;}
-
-#thead{
-	font-size: 1.3rem;
-	color: lightblue;
-}
-
-.side-widget{
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0px;
-}
-.aside{height: 4000px;}
-
-#tbody > tr > th{line-height: 40px;}
-
-.answer-form{display: none;}
-
-.card-body-height{height: 140px;}
-
-</style>
 <!-- 로딩 이벤트 -->
 <script type="text/javascript" src="resources/js/loading.js"></script>
+
 <script type="text/javascript">
 	$(function() {
 		var winY = window.pageYOffset;
@@ -270,9 +176,9 @@
 			type: "get",
 			dataType:"json",
 			success: function(response){
-				//console.log(response["f_name"])
-				//console.log(response["f_img"])
-				//console.log(response["f_info"])
+				console.log(response["f_name"])
+				console.log(response["f_img"])
+				console.log(response["f_info"])
 				
 				let data = "";
 				data += "<div class=" + "'card shadow-sm' align=" + "'center'>"
@@ -281,7 +187,8 @@
 				data += "<h5 class=" + "'card-title'>" + response["f_name"] + "</h5>"
 				data += "<p>" + response["f_info"] + "<br>" + "위치: " + response["f_location"] + "</p>"
 				data += "<button type=" + "'button' id=" + "'backBtn' class=" + "'btn btn-outline-dark mt-auto card-text' onclick=" + "'backBtn()'>" + "back" + "</button></div></div>"
-				$(".f-div").html(data)
+				//$(".f-div").html(data)
+				$("#fac-list-insert").html(data)
 			},
 			error:function(request,status,error){
 				console.log("code: " + request.status)
@@ -291,10 +198,58 @@
 		})
 	}
 	
+	//Facilities Back button
 	const backBtn = function(){
-		location.reload()
+		//location.reload()
+		
+		//ajax를 통해 facility List를 불러와야 함
+		//dataType을 json이 아닌 text로 받아와야 함!!!!
+		$.ajax({
+			url:"/facListJsp?amuse_id=" + ${dto.amuse_id },
+			type:"get",
+			success: function(response){
+				console.log("response = ", typeof(response));
+				
+				document.querySelector("#fac-list-insert").innerHTML = "";
+				const html = $("#fac-list-insert").html(response);
+				console.log("html = ", html);
+				
+				const facilities = html.find("div#fac-main-wrapper").html();
+				$("#fac-list-insert").html(facilities);
+			},
+			error: function(request, status, error){
+				console.log("code: " + request.status)
+				console.log("message: " + request.responseText)
+			}
+		});
 	}
 
+	function getReviewList(){
+		const amuseId = ${dto.amuse_id};
+		const data = {"currentPage" : 1, "amuse_id" : amuseId}
+		
+		$.ajax({
+			url: "/reviewList",
+			type: "post",
+			data: data,
+			success: function(response){ 
+				var html = $("#tbody").html(response);
+				var reviews = html.find("tbody#reviews").html();
+				$("#tbody").html(reviews);
+			},
+			error:function(request,status,error){
+				console.log("code: " + request.status)
+				console.log("message: " + request.responseText)
+				console.log("error: " + error);
+			}
+		})
+		
+		const content = document.querySelector("#content");
+		content.value = "";
+	}
+	
+	
+	
 	function chat(){
 		const member_id = $("#member_id").val();
 		if(member_id === "" || member_id == null){
@@ -366,29 +321,7 @@
 // 		}
 	}
 	
-	function getReviewList(){
-		const amuseId = ${dto.amuse_id};
-		const data = {"currentPage" : 1, "amuse_id" : amuseId}
-		
-		$.ajax({
-			url: "/reviewList",
-			type: "post",
-			data: data,
-			success: function(response){ 
-				var html = $("#tbody").html(response);
-				var reviews = html.find("tbody#reviews").html();
-				$("#tbody").html(reviews);
-			},
-			error:function(request,status,error){
-				console.log("code: " + request.status)
-				console.log("message: " + request.responseText)
-				console.log("error: " + error);
-			}
-		})
-		
-		const content = document.querySelector("#content");
-		content.value = "";
-	}
+	
 	
 	function moveClick(n){
 // 		const ridesTop = document.querySelector(".r_location");
@@ -606,7 +539,8 @@
 				<header class="mb-4 f_location">
 					<h3 class="fw-bolder mb-1">편의시설</h3>
 				</header>
-				<figure class="card-body mb-4 py-5 bg-light album wrapper">
+				<div></div>
+				<figure class="card-body mb-4 py-5 bg-light album wrapper" id="fac-list-insert">
 					<div class="container f-div">
 						<div class="g-5 row overflow-hidden">
 							<c:forEach items="${facility }" var="facility" varStatus="status">

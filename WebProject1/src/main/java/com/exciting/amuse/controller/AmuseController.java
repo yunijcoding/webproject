@@ -261,6 +261,28 @@ public class AmuseController {
 		return fDetail;
 	}
 	
+	//=====facility back btn
+	@GetMapping("/facList")
+	@ResponseBody
+	public List<FacilityDTO> facilitiesList(@RequestParam Map<String, Object> map){
+		List<FacilityDTO> fList = this.facilityService.facilityListMap(map);
+		return fList;
+	}
+	
+	//=====facility => jsp 페이지 하나를 불러와서 화면에 나타내기
+	@GetMapping("/facListJsp")
+	public ModelAndView facListJsp(@RequestParam Map<String, Object> map, 
+			ModelAndView mav) {
+		
+		List<FacilityDTO> fList = this.facilityService.facilityListMap(map);
+		
+		mav.addObject("facList", fList);
+		mav.setViewName("test/facListJsp");
+		
+		return mav;
+	}
+	
+	
 	@PostMapping("/insertReview")
 	@ResponseBody
 	public void amuseReviewList(@RequestParam Map<String, Object> map,
