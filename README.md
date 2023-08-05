@@ -32,12 +32,7 @@
 #### 4) websocket을 활용한 채팅 기능을 추가하여 websocket의 실시간 양방향 통신을 이해할 수 있었습니다.
 
 <br/><br/><br/>
-## 1. 놀이공원 상세 페이지입니다. 
-#### 디자인적인 부분을 강조하기 위해 mouseover 이벤트 처리를 이용하여 기본적인 이미지 전환을 구현해보았습니다.
-![main2](https://github.com/yunijcoding/webproject/assets/140949271/eb8c167c-fb76-404e-8427-9292e4990cbd)
-<br/><br/><br/><br/><br/><br/>
-
-## 2. 편의시설 목록입니다.
+## 1. 편의시설 목록입니다.
 #### 1) useState 훅을 이용해 Detail과 Back 버튼을 클릭했을 때 동적으로 데이터가 처리되도록 했습니다.
 #### 2) 더보기, 접기 버튼으로 Paging을 구현했습니다.
 
@@ -49,7 +44,7 @@
 ![facilities](https://github.com/yunijcoding/webproject/assets/140949271/b8dfbc89-3804-48a2-9902-9c70ce28e6a6)
 <br/><br/><br/><br/><br/><br/>
 
-## 3. 다음은 간략한 후기를 작성할 수 있는 공간입니다.
+## 2. 다음은 간략한 후기를 작성할 수 있는 공간입니다.
 #### 1) 로그인 한 아이디에 한해 글 작성이 가능하고 점수를 부여할 수 있습니다.
 #### 2) 관리자 아이디인 경우 답글을 작성할 수 있습니다.
 #### 3) react-js-pagination 패키지를 이용해 Paging 처리를 하고 오른쪽 상단에는 특정 개수에 따라 후기 목록이 나타나도록 했습니다.
@@ -57,23 +52,23 @@
 ![review](https://github.com/yunijcoding/webproject/assets/140949271/e7328e56-cb24-4d73-ab90-b7c7aa3c9b0c)
 <br/><br/><br/><br/><br/><br/>
 
-## 4. 국내외 놀이공원 추천 목록입니다.
+## 3. 국내외 놀이공원 추천 목록입니다.
 #### 다양한 정보를 제공하고자 놀이공원 별 평균 후기 점수와 후기 개수를 취합하여 추천 목록을 추가했습니다.
 ![amuseList](https://github.com/yunijcoding/webproject/assets/140949271/e01dc676-376d-4164-b224-7103ee817e7b)
 <br/><br/><br/><br/><br/><br/>
 
-## 5. 놀이공원의 위치입니다.
+## 4. 놀이공원의 위치입니다.
 #### kakao map api를 이용해 해당 놀이공원의 위치와 마커를 표기했습니다.
 ![map](https://github.com/yunijcoding/webproject/assets/140949271/0f6536ef-616a-46de-8e4e-b1d86cf7ea17)
 <br/><br/><br/><br/><br/><br/>
 
-## 6. 놀이기구 상세 페이지입니다.
+## 5. 놀이기구 상세 페이지입니다.
 #### 1) 배경 이미지가 고정된 채로 스크롤이 이동하는 디자인이 매력적으로 느껴져서 background-attachment 속성을 fixed로 설정하여 구현해보았습니다.
 #### 2) 탭 메뉴를 통해 다양한 놀이기구 정보를 나타냈습니다.
 ![rideDetail](https://github.com/yunijcoding/webproject/assets/140949271/a13f6f81-c11d-49d2-9a77-cbefa57178bf)
 <br/><br/><br/><br/><br/><br/>
 
-## 7. 마지막으로 웹소켓을 활용한 채팅 서비스입니다.
+## 6. 마지막으로 웹소켓을 활용한 채팅 서비스입니다.
 #### 1) 소켓 서버는 express로 구성했습니다.
 #### 2) chat 버튼 클릭 시 모달창이 나타나고 소켓 서버에 connection 되도록 코드를 작성했습니다.
 
