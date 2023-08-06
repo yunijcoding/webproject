@@ -1,15 +1,31 @@
 # Team Project 1)
 
 #### ✔️Front-end
-<img src="https://img.shields.io/badge/Css-1572B6?style=for-the-badge&logo=Css&logoColor=white"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=purple"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"><img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=yellow">
+<img src="https://img.shields.io/badge/Css-1572B6?style=for-the-badge&logo=Css&logoColor=white"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=purple"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"> <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=yellow">
 #### ✔️Back-end
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=green"><img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=for-the-badge&logo=Apache Tomcat&logoColor=black">
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=green"> <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=for-the-badge&logo=Apache Tomcat&logoColor=black">
 #### ✔️DB
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=green">
 
 ### ✔️About project
-#### 놀이공원 및 놀이기구에 대한 상세 페이지를 담당했습니다. 사용자에게 다양한 정보 제공과 편의를 중점에 두고 프로젝트를 진행했습니다.
-#### AJAX를 이용한 데이터의 비동기 처리 방식 활용과 Spring Framework의 MVC 모델 작동 원리 및 SQL 쿼리를 더욱 더 이해할 수 있는 계기가 되었습니다.
+#### Spring Framework를 사용한 첫번째 팀 프로젝트입니다. 
+#### 코로나로 인한 여행의 갈증을 조금이나마 해소하고자 각 나라의 주요 놀이공원 및 놀이기구를 소개해보자는 취지로 주제를 선정하였고 
+#### 저는 놀이공원과 놀이기구의 상세페이지를 맡았습니다. 
+#### 사용자에게 다양한 정보를 전달해야 했고 사용자 편의를 중점에 두고 프로젝트를 진행했습니다.
+- JSP를 통해 동적인 View를 생성했고 JSTL을 이용해 반복문, 조건문 처리 방식을 이해하고 학습했습니다.
+- MVC 모델을 통해 사용자 입력과 데이터를 처리하고 화면을 구성하는 작동 원리를 이해했습니다.
+- 이번 프로젝트에서 AJAX를 활용해 비동기적으로 데이터 교환 방식을 많이 활용해보려고 했습니다. jQuery 방식과 fetch API 방식을 사용하여 동적으로 데이터를 처리하는 방법에 대한 개념을 더욱 더 확립할 수 있었습니다.
+
+![ajax(project1)](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/e2e52dcb-62e1-4273-99c6-286c86fa259c)
+
+#### 1) jQuery AJAX
+![스크린샷 2023-08-06 150713](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/a405fb44-9572-4988-8fe3-399dfd08b9bf)
+
+#### 2) fetch API
+![스크린샷 2023-08-06 150851](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/c5a7a229-ce63-4882-89f7-bdae0ecc25bd)
+
+
+<br/>
 
 
 
@@ -17,7 +33,7 @@
 # Team Project 2)
 
 #### ✔️Front-end
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=black">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=black">
 #### ✔️Back-end
 <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=green"> 
 
@@ -26,12 +42,12 @@
 
 ### ✔️About project
 #### 두번째 팀 프로젝트는 기존의 Spring Framework와 JavaScript 기반의 프로젝트를 Spring Boot와 React를 사용해 적용시켰습니다.
-#### 1) JPA를 통해 SQL문이 아닌 Method를 통한 객체지향적 코드 작성을 학습했습니다.
-#### 2) 데이터를 JSON 형태로 나타내고 처리하는 방식을 통해 RESTful API에 대한 이해도가 증가하였습니다.
-#### 3) React에서 Component 생명 주기, Hook, 렌더링 원리에 친숙해진 계기가 되었습니다.
-#### 4) websocket을 활용한 채팅 기능을 추가하여 websocket의 실시간 양방향 통신을 이해할 수 있었습니다.
+- JPA를 통해 SQL문이 아닌 Method를 통한 객체지향적 코드 작성을 학습했습니다.
+- 데이터를 JSON 형태로 나타내고 처리하는 방식을 통해 RESTful API에 대한 이해도가 증가하였습니다.
+- React에서 Component 생명 주기, Hook, 렌더링 원리에 친숙해진 계기가 되었습니다.
+- websocket을 활용한 채팅 기능을 추가하여 websocket의 실시간 양방향 통신을 이해할 수 있었습니다.
 
-<br/><br/><br/>
+<br/><br/>
 ## 1. 편의시설 목록입니다.
 #### 1) useState 훅을 이용해 Detail과 Back 버튼을 클릭했을 때 동적으로 데이터가 처리되도록 했습니다.
 #### 2) 더보기, 접기 버튼으로 Paging을 구현했습니다.
