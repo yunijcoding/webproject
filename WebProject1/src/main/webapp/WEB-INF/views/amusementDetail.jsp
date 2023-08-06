@@ -200,11 +200,7 @@
 	
 	//Facilities Back button
 	const backBtn = function(){
-		//location.reload()
-		
-		//ajax를 통해 facility List를 불러와야 함
-		//dataType을 json이 아닌 text로 받아와야 함!!!!
-		$.ajax({
+		 /*$.ajax({
 			url:"/facListJsp?amuse_id=" + ${dto.amuse_id },
 			type:"get",
 			success: function(response){
@@ -221,7 +217,27 @@
 				console.log("code: " + request.status)
 				console.log("message: " + request.responseText)
 			}
-		});
+		});*/
+		
+		fetch("/facListJsp?amuse_id=" + ${dto.amuse_id})
+		  .then(response => {
+		    if (!response.ok) {
+		      throw new Error(`Network response was not ok: ${response.status}`);
+		    }
+		    return response.text();
+		  })
+		  .then(html => {
+		    console.log("response type = ", typeof(html));
+		    console.log("response = ", html);
+		    
+		    document.querySelector("#fac-list-insert").innerHTML = html;
+		    
+		    const facilities = new DOMParser().parseFromString(html, 'text/html').querySelector("div#fac-main-wrapper").innerHTML;
+		    document.querySelector("#fac-list-insert").innerHTML = facilities;
+		  })
+		  .catch(error => {
+		    console.error("Error:", error);
+		  });
 	}
 
 	function getReviewList(){
