@@ -8,16 +8,9 @@
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=green">
 
 ### ✔️About project
-#### 첫번째 프로젝트입니다. 코로나로 인한 여행의 갈증을 조금이나마 해소하고자 여행지를 검색하던 중 각 나라의 대표 놀이공원 및 놀이기구를 소개하고 예약 시스템을 만들어보자는 취지에서 주제를 선정하게 되었습니다.
+#### 첫번째 프로젝트입니다. 코로나로 인한 여행의 갈증을 조금이나마 해소하고자 여행지를 검색하던 중 각 나라의 대표 놀이공원 및 놀이기구를 소개해보면 어떨까 하는 취지에서 주제를 선정하게 되었습니다.
 #### 저는 놀이공원과 놀이기구의 상세페이지와 웹 소켓을 활용한 실시간 채팅 기능 구현을 담당했습니다. 웹 페이지를 방문하는 사용자의 편의를 중점에 두고 다양한 정보 전달을 목표로 프로젝트에 임했습니다.
-
-![ajax(project1)](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/e2e52dcb-62e1-4273-99c6-286c86fa259c)
-
-#### 1) jQuery AJAX
-![스크린샷 2023-08-06 150713](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/a405fb44-9572-4988-8fe3-399dfd08b9bf)
-
-#### 2) fetch API
-![스크린샷 2023-08-06 150851](https://github.com/yunijcoding/yunijcoding.github.io/assets/140949271/c5a7a229-ce63-4882-89f7-bdae0ecc25bd)
+#### 프로젝트를 직접 설계하고 개발하면서 나도 할 수 있다는 자신감을 많이 얻었습니다. 교육 기간 중 첫번째 프로젝트라 의욕만 넘치고 결과물이 다듬어지지 않아 아쉬움이 많이 남았습니다.
 <br/>
 
 
